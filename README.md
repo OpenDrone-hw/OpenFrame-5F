@@ -64,6 +64,11 @@ annotation errors only.
 - `OpenFrame-5.pdf` sheet 2 labels **both** camera mount views "Camera mount
   (left)". One is the right-hand part. The 3" drawing labels these correctly.
 
+## Links
+
+- Product page: [opendrone.be/products/openframe](https://opendrone.be/products/openframe)
+- Video channel: [JustFPV on YouTube](https://www.youtube.com/@justfpv1432)
+
 ## Licence
 
 Hardware: CERN-OHL-S. See the OpenDrone stack for firmware licensing.
