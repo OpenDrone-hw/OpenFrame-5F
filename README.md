@@ -16,12 +16,9 @@
 |---|---|---|
 | Class | 3" freestyle | 5" freestyle |
 | Carbon parts per set | 8 pieces, 5 types (arm x4, bottom, middle, top, cross) | same |
-| Carbon material | T700, 3K twill | T700, 3K twill |
-| Aluminium parts | Camera mount pair (left + right), 6061-T6 / 7075-T6 | same |
-| Plate thicknesses | 2.0 to 4.0 mm | 2.5 to 6.0 mm |
-| Fastener sizes | M2 / M2.5 | M3 |
+| Aluminium parts per set | Camera mount pair, left + right | same |
 
-Per-part thicknesses, hole sizes, counterbores, fillets, and tolerance notes are in [hardware/docs/DESIGN.md](hardware/docs/DESIGN.md).
+Materials, per-part thicknesses, hole sizes, counterbores, fillets, fastener sizes, and tolerance notes are in [hardware/docs/DESIGN.md](hardware/docs/DESIGN.md).
 
 ## Repository layout
 

@@ -1,5 +1,5 @@
-CNC PARTS ORDER - PARTS LIST
-=============================
+OPENFRAME-3 (3 INCH) - CNC PARTS ORDER - PARTS LIST
+====================================================
 
 Material: T700 Carbon Fiber
 -----------------------------
@@ -19,6 +19,6 @@ NOTES
 - Some parts have holes designed for press-nuts. Please use the
   standard press-nuts provided by your CNC service for the
   corresponding hole sizes.
-- The accompanying .zip contains .step files for all parts listed
-  above, plus a technical drawing (PDF) with full specifications
+- This pack contains one .step file per part listed above, plus the
+  technical drawing OpenFrame-3.pdf with full specifications
   (tolerances, hole sizes, thread callouts, material notes, etc.)
