@@ -41,3 +41,7 @@ Not yet fixed at source in Onshape. Geometry is unaffected; these are drawing an
 - `OpenFrame-5.pdf` sheet 1 title block reads **"OpenDrone Frame 3""**. Sheet 2 has no title field.
 - `OpenFrame-5.pdf` sheet 2 labels **both** camera mount views "Camera mount (left)". One is the right-hand part. The 3" drawing labels these correctly.
 - `OpenFrame-5.pdf` sheet 1, top plate hole callout A reads **"Ø 3.1mm (m2.5 bolt)"**. The 5" frame is all-M3; Ø3.1 is the M3 clearance used everywhere else on the sheet.
+
+## Revisions
+
+- **Initial export** (2026-07-05): all seven 5" STEP files written with no `.step` extension.
