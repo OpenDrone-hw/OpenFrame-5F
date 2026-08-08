@@ -3,7 +3,7 @@
 ## Setup
 
 ```
-git clone https://github.com/incutec-hw/OpenFrame.git
+git clone https://github.com/OpenDrone-hw/OpenFrame.git
 ```
 
 No submodules and no build step: the repository is the released CAD packs plus documentation.

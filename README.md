@@ -40,7 +40,7 @@ Materials, per-part thicknesses, hole sizes, counterbores, fillets, fastener siz
 There is no build step: the release packs are the deliverable.
 
 ```
-git clone https://github.com/incutec-hw/OpenFrame.git
+git clone https://github.com/OpenDrone-hw/OpenFrame.git
 ```
 
 
