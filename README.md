@@ -1,8 +1,7 @@
 # OpenFrame
 
-**Planned.** The CAD is not finalised, so this repo is empty until it is. This
-page is the specification. If you want to work on it, say so on
-[Discord](https://discord.gg/v3sWmTcx3R).
+**Planned.** The CAD is not finalised. This page records the current
+specification; inspect Git and the repository contents for implementation state.
 
 CNC-machined carbon fibre FPV frames in 3" and 5" freestyle sizes, part of the
 incutec OpenDrone line.
@@ -32,26 +31,27 @@ Each export lands as its own commit, so `git log` says exactly which geometry a
 
 A STEP or a PDF is never edited in place. A defect gets fixed at source and
 
-## Open questions
+## Design inputs not yet selected
 
 - **Which tool.** Onshape is what the earlier geometry was drawn in. It is
   better than anything else at several people in one document, but the free tier
-  alternative. This is the first decision.
+  alternative. Tool selection requires an explicit design task.
   comparison and evaluation criteria are all recoverable at the
-  `pre-reset-2026-08-13` tag, and reading them is the fastest way in.
+  `pre-reset-2026-08-13` tag. Treat them as history, not current requirements.
 - **Standard parts.** Which fasteners, standoffs and grommets, so a repair does
 - **Board fit.** Mounting patterns are 30.5 x 30.5 mm and 20 x 20 mm across the
   line. The frame is what makes those real.
 
 ## Research
 
-evaluation criteria are in [research/](research/). Those are live working
+Design rationale and dimensions are in [docs/](docs/). Those are live working
 records, not settled fact.
+
+kept in the private Incutec vault, not in this repository.
 
 ## Contributing
 
-Issues and pull requests are welcome on any repo. Say what you intend to change
-before you do, on [Discord](https://discord.gg/v3sWmTcx3R).
+Issues and pull requests are welcome.
 
 How everything works: [CONTRIBUTING.md](CONTRIBUTING.md).
 
