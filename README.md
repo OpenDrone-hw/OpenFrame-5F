@@ -47,7 +47,7 @@ A STEP or a PDF is never edited in place. A defect gets fixed at source and
 Design rationale and dimensions are in [docs/](docs/). Those are live working
 records, not settled fact.
 
-kept in the private Incutec vault, not in this repository.
+the scope of this public design repository.
 
 ## Contributing
 
