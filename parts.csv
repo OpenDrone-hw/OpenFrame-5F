@@ -1,0 +1,16 @@
+part,type,material,thickness_mm,qty_per_set,process,sku,onshape_part
+Arm,arm,Carbon fiber epoxy (61%),6,4,CNC carbon plate,ACC-FRM-ARM-5,JHD
+Boot-L,arm boot,,,2,,,RCBD
+Boot-R,arm boot,,,2,,,RXBD
+Cam-Mount-L,camera mount,,,1,,,RaBD
+Cam-Mount-R,camera mount,,,1,,,RzBD
+Cross,cross,Carbon fiber epoxy (61%),6,1,CNC carbon plate,ACC-FRM-CROSS-5,JHH
+Airtag/Antenna mount,mount,,,1,,,ReBD
+VTX-Mount,mount,,,1,,,
+anti-slip pad,pad,,,1,,,
+Base-Bot,plate,Carbon fiber epoxy (61%),,1,CNC carbon plate,,JND
+Base-Top,plate,Carbon fiber epoxy (61%),,1,CNC carbon plate,,JKD
+Top,plate,Carbon fiber epoxy (61%),,1,CNC carbon plate,,JQD
+18mmx4mm,standoff,Aluminum,,4,CNC aluminium,,J8D
+Standoff-L,standoff,Aluminum,,1,CNC aluminium,,JpD
+Standoff-R,standoff,Aluminum,,1,CNC aluminium,,J9D

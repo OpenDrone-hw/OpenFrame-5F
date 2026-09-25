@@ -1,61 +1,104 @@
-# OpenFrame
+# OpenFrame-5F
 
-**Planned.** The CAD is not finalised. This page records the current
-specification; inspect Git and the repository contents for implementation state.
+The 5" OpenFrame: a CNC carbon fibre freestyle FPV frame in the
+incutec OpenDrone line. The 3" and 5" frames are separate repositories:
+[OpenFrame-3F](https://github.com/OpenDrone-hw/OpenFrame-3F) and
+[OpenFrame-5F](https://github.com/OpenDrone-hw/OpenFrame-5F).
 
-CNC-machined carbon fibre FPV frames in 3" and 5" freestyle sizes, part of the
-incutec OpenDrone line.
+<p>
+<img src="images/assembly.png" width="420" alt="OpenFrame-5F with electronics, Onshape assembly" />
+<img src="images/frame.png" width="420" alt="OpenFrame-5F frame parts, Onshape part studio" />
+</p>
 
-## Why
+[![Status](https://img.shields.io/endpoint?url=https://opendrone.be/api/status/OpenFrame-5F.json)](https://github.com/OpenDrone-hw/.github/blob/main/CONTRIBUTING.md#the-life-of-a-project)
 
-The frame is the one part of a drone that people are happiest to buy from
-whoever is cheapest, and the one part where a bad decision is felt on every
-crash. It is also the only mechanical product in the line, so it is where the
-CAD half of the project gets built out.
+## Where the design lives
 
-## Requirements
+```mermaid
+flowchart LR
+  O["Onshape<br/>OpenDrone-V2, workspace 5""] --> V["Named version"]
+  V --> E["onshape_release.py"]
+  E --> R["releases/rev/<br/>STEP, drawings, manifest"]
+```
 
 | | |
 |---|---|
-| Sizes | 3" and 5" freestyle |
-| Carbon parts | 8 pieces per set, 5 types: 4x arm, bottom, middle, top, cross |
-| Metal parts | Camera mount pair, left and right, aluminium |
-| Manufacture | CNC, carbon plate and aluminium |
-| Authored in | Onshape or FreeCAD, declared in AGENTS.md when the design starts |
+| Source | [Onshape document OpenDrone-V2, workspace 5"](https://cad.onshape.com/documents/78e093d02798373a79bc68d0/w/c0ca752de47c1227bb727503) |
+| Link file | [`cad/onshape.json`](cad/onshape.json): document, workspace, element and part ids |
+| Released exports | `releases/<rev>/`, written by `onshape_release.py`, never edited |
+| Parts per set | [`parts.csv`](parts.csv) |
+| Fasteners and hardware | [`hardware.csv`](hardware.csv) |
+| Standard | Incutec mechanical repository template (`templates/mechanical-repository` in the hardware tooling) |
 
-## Where the CAD lives
+## A set
 
-Mechanical work is not KiCad and the repo shape differs. When the design
-per part, the dimensioned drawings, and the parts list. One directory per size.
-Each export lands as its own commit, so `git log` says exactly which geometry a
+15 part types, 23 pieces, 8 of them carbon. Taken from the
+Onshape assembly; materials are as set in the model.
 
-A STEP or a PDF is never edited in place. A defect gets fixed at source and
+| Part | Qty | Material | Thickness | Made by |
+|---|---|---|---|---|
+| Arm | 4 | Carbon fiber epoxy (61%) | 6 mm | CNC carbon plate |
+| Boot-L | 2 | not set in the model |  |  |
+| Boot-R | 2 | not set in the model |  |  |
+| Cam-Mount-L | 1 | not set in the model |  |  |
+| Cam-Mount-R | 1 | not set in the model |  |  |
+| Cross | 1 | Carbon fiber epoxy (61%) | 6 mm | CNC carbon plate |
+| Airtag/Antenna mount | 1 | not set in the model |  |  |
+| VTX-Mount | 1 | not set in the model |  |  |
+| anti-slip pad | 1 | not set in the model |  |  |
+| Base-Bot | 1 | Carbon fiber epoxy (61%) |  | CNC carbon plate |
+| Base-Top | 1 | Carbon fiber epoxy (61%) |  | CNC carbon plate |
+| Top | 1 | Carbon fiber epoxy (61%) |  | CNC carbon plate |
+| 18mmx4mm | 4 | Aluminum |  | CNC aluminium |
+| Standoff-L | 1 | Aluminum |  | CNC aluminium |
+| Standoff-R | 1 | Aluminum |  | CNC aluminium |
 
-## Design inputs not yet selected
+Fasteners and hardware per set, from the same assembly:
 
-- **Which tool.** Onshape is what the earlier geometry was drawn in. It is
-  better than anything else at several people in one document, but the free tier
-  alternative. Tool selection requires an explicit design task.
-  comparison and evaluation criteria are all recoverable at the
-  `pre-reset-2026-08-13` tag. Treat them as history, not current requirements.
-- **Standard parts.** Which fasteners, standoffs and grommets, so a repair does
-- **Board fit.** Mounting patterns are 30.5 x 30.5 mm and 20 x 20 mm across the
-  line. The frame is what makes those real.
+| Item | Qty |
+|---|---|
+| Black-Oxide Alloy Steel Hex Drive Flat Head Screw | 5 |
+| Hex socket head cap screw M3x0.50 x 8 | 16 |
+| Prevailing torque nut M3x0.5 | 4 |
+| Socket button head screw M3x0.5 x 12 | 4 |
+| Socket button head screw M3x0.5 x 20 | 4 |
+| Socket button head screw M3x0.5 x 6 | 8 |
+| Socket button head screw M3x0.5 x 8 | 10 |
+| m3 pressnut | 10 |
+| softmount m2 | 8 |
 
-## Research
+## Model checks
 
-Design rationale and dimensions are in [docs/](docs/). Those are live working
-records, not settled fact.
+Found when this repository was set up on 2026-09-25. They stay listed until
+the model is fixed.
 
-the scope of this public design repository.
+| Check | Finding |
+|---|---|
+| Camera mounts | `Cam-Mount-R` is in the frame Part Studio but not in the 5" assembly; the set above counts it |
+| Missing parts | The `VTX-Mount` and `anti-slip pad` instances in the 5" assembly point to part ids that no longer exist in the Part Studio |
+| Materials | Printed parts have no material set in the model |
+| Motor hardware | The assembly's four M5 prop nuts belong to the motors and are left out of `hardware.csv` |
 
-## Contributing
+## Dimensions from the last released drawing
 
-Issues and pull requests are welcome.
+| | 5" |
+|---|---|
+| Top plate | 2.5 mm |
+| Middle plate | 3.0 mm |
+| Bottom plate | 3.0 mm |
+| Cross | 6.0 mm |
+| Arm | 6.0 mm |
+| Bolt holes | Ø3.1 (M3) |
+| Press-nut holes | Ø4.5 (M3) |
+| Bolt-head counterbore | Ø5.8 (M3 ISO 7380) |
+| Countersink | none |
+| Camera mount thread | M3 |
 
-How everything works: [CONTRIBUTING.md](CONTRIBUTING.md).
+Chamfers 0.5 mm 45°, outer fillets R1.0 mm, inner fillets R1.05 mm unless the
+drawing says otherwise. The cross-to-arm interface is a press fit and is the
+tightest tolerance in the design.
 
-## License
+## Licence
 
 Hardware licensed under [CERN-OHL-S-2.0](https://ohwr.org/cern_ohl_s_v2.txt),
-see [LICENSE](LICENSE).
+see [LICENSE](LICENSE). Contributing: [CONTRIBUTING.md](CONTRIBUTING.md).

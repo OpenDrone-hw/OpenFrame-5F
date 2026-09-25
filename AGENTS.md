@@ -1,26 +1,17 @@
-# OpenFrame
+# OpenFrame-5F
 
-CNC-machined carbon fibre frames in 3" and 5" freestyle sizes, the one
-mechanical product in the line. This repository holds no CAD source on
-`main`. `docs/DESIGN.md` records the part set, plate thicknesses, dimensions
-and the rationale taken from the earlier released drawings. Product intent,
-requirements and the unselected design inputs (CAD tool, standard parts,
-board fit) are in [README.md](README.md). Do not restate either here.
-
-## Repo
+The 5" frame. The design source is the Onshape document in
+`cad/onshape.json` (OpenDrone-V2, workspace 5"); this repository holds
+the link, the released exports and the parts lists. It follows the Incutec
+mechanical repository template. Use the Onshape skill for any CAD work.
 
 | | |
 |---|---|
 | Status | See the `status-*` topic on the repo. Never written here. |
-| Designed in | Not selected: Onshape or FreeCAD, decided by an explicit design task and then written here |
-| Design notes | `docs/DESIGN.md` |
+| Validate | `python3 <hardware-tooling>/hardware/mechanical_check.py .` |
+| Release | `onshape_release.py cad/onshape.json --version <rev> --apply`, then one commit adding `releases/<rev>/` |
 | License | CERN-OHL-S-2.0 |
 
-No KiCad here, so the board Rules and ERC/DRC checks do not apply. What does:
-a STEP or a PDF is never edited in place; fix the source and re-export, one
-
-## By task
-
-- Answer a dimension, thickness or part-count question: read `docs/DESIGN.md`; it is taken from the released drawings, and a set is eight carbon pieces of five types plus two aluminium camera mounts.
-- Look at the earlier geometry: `git show pre-reset-2026-08-13 --stat`, then the files at that tag; read them as history.
-- Start CAD work: only on request, after the tool is chosen and named in Repo above. One directory per size holding the CAD source, one STEP per part, the dimensioned drawings and the parts list, each export its own commit.
+- Never edit a file under `releases/`. Fix the model in Onshape and release a new revision.
+- A part added, removed or re-counted in the Onshape assembly changes `parts.csv` or `hardware.csv` in the same pull request.
+- The 3" and 5" frames share one Part Studio in OpenDrone-V2; a change to a shared part affects both repositories.
