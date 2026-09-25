@@ -8,9 +8,9 @@ Cross,cross,Carbon fiber epoxy (61%),6,1,CNC carbon plate,ACC-FRM-CROSS-5,JHH
 Airtag/Antenna mount,mount,,,1,,,ReBD
 VTX-Mount,mount,,,1,,,
 anti-slip pad,pad,,,1,,,
-Base-Bot,plate,Carbon fiber epoxy (61%),,1,CNC carbon plate,,JND
-Base-Top,plate,Carbon fiber epoxy (61%),,1,CNC carbon plate,,JKD
-Top,plate,Carbon fiber epoxy (61%),,1,CNC carbon plate,,JQD
+Base-Bot,plate,Carbon fiber epoxy (61%),3,1,CNC carbon plate,ACC-FRM-BOT-5,JND
+Base-Top,plate,Carbon fiber epoxy (61%),3,1,CNC carbon plate,ACC-FRM-MID-5,JKD
+Top,plate,Carbon fiber epoxy (61%),2.5,1,CNC carbon plate,ACC-FRM-TOP-5,JQD
 18mmx4mm,standoff,Aluminum,,4,CNC aluminium,,J8D
 Standoff-L,standoff,Aluminum,,1,CNC aluminium,,JpD
 Standoff-R,standoff,Aluminum,,1,CNC aluminium,,J9D
