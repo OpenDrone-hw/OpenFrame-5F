@@ -117,6 +117,22 @@
       "release": true
     },
     {
+      "elementId": "706f33d195388d882b65aa32",
+      "partId": "REBH",
+      "name": "VTX-Mount",
+      "release": true,
+      "sourceVersion": "86d5a2903dee7ee367614d84",
+      "sourceMicroversion": "279530dc1c4bb6c4e1137f41"
+    },
+    {
+      "elementId": "706f33d195388d882b65aa32",
+      "partId": "RLED",
+      "name": "anti-slip pad",
+      "release": true,
+      "sourceVersion": "3443375633c8ca28000b5bf1",
+      "sourceMicroversion": "57768d6d87306c1ec19874bb"
+    },
+    {
       "partStudio": "311a9ccaf4570ac11afc63e4",
       "partId": "JQD",
       "name": "m3 pressnut",
@@ -129,6 +145,11 @@
       "release": false
     }
   ],
+  "agentBranch": {
+    "id": "7385d4c988b9dbab01add49d",
+    "name": "agent/model-checks-5in",
+    "url": "https://cad.onshape.com/documents/78e093d02798373a79bc68d0/w/7385d4c988b9dbab01add49d"
+  },
   "modelCheck": {
     "ignoreHardware": [
       "Prevailing torque nut M5x0.80"

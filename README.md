@@ -33,19 +33,24 @@ flowchart LR
 ## A set
 
 15 part types, 23 pieces, 8 of them carbon. Taken from the
-Onshape assembly; materials are as set in the model.
+Onshape assembly; materials are as set in the agent branch model. The
+Onshape material library has no TPU entry, so the TPU parts carry
+`Polyurethane`; the pad carries `Silicone Rubber`.
+VTX-Mount and anti-slip pad are taken from document versions `V4` and
+`antislip pad v2` (`sourceVersion` in `cad/onshape.json`). A version cannot
+be edited, so the model still gives VTX-Mount as PLA and the pad no material.
 
 | Part | Qty | Material | Thickness | Made by |
 |---|---|---|---|---|
 | Arm | 4 | Carbon fiber epoxy (61%) | 6 mm | CNC carbon plate |
-| Boot-L | 2 | not set in the model |  |  |
-| Boot-R | 2 | not set in the model |  |  |
-| Cam-Mount-L | 1 | not set in the model |  |  |
-| Cam-Mount-R | 1 | not set in the model |  |  |
+| Boot-L | 2 | Polyurethane |  | 3D print, TPU |
+| Boot-R | 2 | Polyurethane |  | 3D print, TPU |
+| Cam-Mount-L | 1 | Polyurethane |  | 3D print, TPU |
+| Cam-Mount-R | 1 | Polyurethane |  | 3D print, TPU |
 | Cross | 1 | Carbon fiber epoxy (61%) | 6 mm | CNC carbon plate |
-| Airtag/Antenna mount | 1 | not set in the model |  |  |
-| VTX-Mount | 1 | not set in the model |  |  |
-| anti-slip pad | 1 | not set in the model |  |  |
+| Airtag/Antenna mount | 1 | Polyurethane |  | 3D print, TPU |
+| VTX-Mount | 1 | Polyurethane |  | 3D print, TPU |
+| anti-slip pad | 1 | Silicone Rubber |  | moulded silicone |
 | Base-Bot | 1 | Carbon fiber epoxy (61%) | 3 mm | CNC carbon plate |
 | Base-Top | 1 | Carbon fiber epoxy (61%) | 3 mm | CNC carbon plate |
 | Top | 1 | Carbon fiber epoxy (61%) | 2.5 mm | CNC carbon plate |
@@ -73,16 +78,15 @@ The assembly's four M5 prop nuts belong to the motors and are left out of
 ## Model checks
 
 The table is the output of the hardware tooling's
-`python3 hardware/onshape_model_check.py cad/onshape.json --repo .`, run
-against workspace 5" on 2026-09-25. A row stays until the model is fixed;
-rerun the tool and paste its output to refresh it.
+`python3 hardware/onshape_model_check.py cad/onshape.json --repo . --agent-branch`,
+run on 2026-09-25. A row stays until the model is fixed; rerun the tool and
+paste its output to refresh it.
+
+The table reflects the Onshape branch workspace `agent/model-checks-5in` (`agentBranch` in `cad/onshape.json`), pending its merge into workspace 5".
 
 | Check | Finding |
 |---|---|
-| Missing parts | `anti-slip pad <1>` points at part `RLED` in version `antislip pad v2`, not at the workspace; the workspace `frame` Part Studio has no part of that name; `VTX-Mount <1>` points at part `REBH` in version `V4`, not at the workspace; the workspace `frame` Part Studio has no part of that name; `Bumper <1>` has no source part (deleted or not shared) |
-| Unused parts | `Cam-Mount-R` is in the `frame` Part Studio but not in the assembly |
-| Materials | `anti-slip pad`, `Boot-L`, `Boot-R`, `Airtag/Antenna mount`, `Cam-Mount-L` and `Cam-Mount-R` have no material set in the model |
-| Parts list | `Cam-Mount-R`: parts.csv 1, assembly 0 |
+| Materials | `anti-slip pad` has no material set in the model |
 
 ## Dimensions from the last released drawing
 
