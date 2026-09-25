@@ -67,17 +67,22 @@ Fasteners and hardware per set, from the same assembly:
 | m3 pressnut | 10 |
 | softmount m2 | 8 |
 
+The assembly's four M5 prop nuts belong to the motors and are left out of
+`hardware.csv`; `cad/onshape.json` lists them under `modelCheck.ignoreHardware`.
+
 ## Model checks
 
-Found when this repository was set up on 2026-09-25. They stay listed until
-the model is fixed.
+The table is the output of the hardware tooling's
+`python3 hardware/onshape_model_check.py cad/onshape.json --repo .`, run
+against workspace 5" on 2026-09-25. A row stays until the model is fixed;
+rerun the tool and paste its output to refresh it.
 
 | Check | Finding |
 |---|---|
-| Camera mounts | `Cam-Mount-R` is in the frame Part Studio but not in the 5" assembly; the set above counts it |
-| Missing parts | The `VTX-Mount` and `anti-slip pad` instances in the 5" assembly point to part ids that no longer exist in the Part Studio |
-| Materials | Printed parts have no material set in the model |
-| Motor hardware | The assembly's four M5 prop nuts belong to the motors and are left out of `hardware.csv` |
+| Missing parts | `anti-slip pad <1>` points at part `RLED` in version `antislip pad v2`, not at the workspace; the workspace `frame` Part Studio has no part of that name; `VTX-Mount <1>` points at part `REBH` in version `V4`, not at the workspace; the workspace `frame` Part Studio has no part of that name; `Bumper <1>` has no source part (deleted or not shared) |
+| Unused parts | `Cam-Mount-R` is in the `frame` Part Studio but not in the assembly |
+| Materials | `anti-slip pad`, `Boot-L`, `Boot-R`, `Airtag/Antenna mount`, `Cam-Mount-L` and `Cam-Mount-R` have no material set in the model |
+| Parts list | `Cam-Mount-R`: parts.csv 1, assembly 0 |
 
 ## Dimensions from the last released drawing
 

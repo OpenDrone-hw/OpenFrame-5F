@@ -128,5 +128,10 @@
       "name": "softmount m2",
       "release": false
     }
-  ]
+  ],
+  "modelCheck": {
+    "ignoreHardware": [
+      "Prevailing torque nut M5x0.80"
+    ]
+  }
 }
