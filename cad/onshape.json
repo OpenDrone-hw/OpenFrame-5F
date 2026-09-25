@@ -114,7 +114,7 @@
       "partStudio": "706f33d195388d882b65aa32",
       "partId": "RzBD",
       "name": "Cam-Mount-R",
-      "release": false
+      "release": true
     },
     {
       "partStudio": "311a9ccaf4570ac11afc63e4",
