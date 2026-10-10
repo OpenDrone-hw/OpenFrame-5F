@@ -3,7 +3,7 @@
   "document": {
     "id": "78e093d02798373a79bc68d0",
     "name": "OpenDrone-V2",
-    "owner": "design lead",
+    "owner": "Incutec BV",
     "url": "https://cad.onshape.com/documents/78e093d02798373a79bc68d0/w/c0ca752de47c1227bb727503"
   },
   "workspace": {
@@ -24,6 +24,21 @@
     {
       "id": "56ce93b60ab3c76a7958d3b0",
       "name": "Softmount",
+      "type": "PARTSTUDIO"
+    },
+    {
+      "id": "2c402cb86051e5448b669a7c",
+      "name": "DIN_EN_ISO_7380_M4x12.ipt",
+      "type": "PARTSTUDIO"
+    },
+    {
+      "id": "895d7c7ee435929f9c3810ef",
+      "name": "DIN_EN_ISO_7380_M3x12.ipt",
+      "type": "PARTSTUDIO"
+    },
+    {
+      "id": "ce4040f8422c737e03ecf548",
+      "name": "DIN_EN_ISO_7380_M3x8.ipt",
       "type": "PARTSTUDIO"
     },
     {
@@ -70,59 +85,59 @@
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "JpD",
+      "partId": "JsD",
       "name": "Standoff-L",
       "release": true
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "J8D",
+      "partId": "J+D",
       "name": "18mmx4mm",
       "release": true
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "J9D",
+      "partId": "J/D",
       "name": "Standoff-R",
       "release": true
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "RCBD",
+      "partId": "REBD",
       "name": "Boot-L",
       "release": true
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "RXBD",
+      "partId": "RZBD",
       "name": "Boot-R",
       "release": true
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "RaBD",
+      "partId": "RcBD",
       "name": "Cam-Mount-L",
       "release": true
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "ReBD",
+      "partId": "RgBD",
       "name": "Airtag/Antenna mount",
       "release": true
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "RzBD",
+      "partId": "R1BD",
       "name": "Cam-Mount-R",
-      "release": true
+      "release": false
     },
     {
       "elementId": "706f33d195388d882b65aa32",
-      "partId": "REBH",
+      "partId": "RDBH",
       "name": "VTX-Mount",
       "release": true,
-      "sourceVersion": "86d5a2903dee7ee367614d84",
-      "sourceMicroversion": "279530dc1c4bb6c4e1137f41"
+      "sourceVersion": "814ba5092c6ec2a12ef5d43c",
+      "sourceMicroversion": "32a7779faef95828a3b27add"
     },
     {
       "elementId": "706f33d195388d882b65aa32",
@@ -131,6 +146,12 @@
       "release": true,
       "sourceVersion": "3443375633c8ca28000b5bf1",
       "sourceMicroversion": "57768d6d87306c1ec19874bb"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RKCD",
+      "name": "Bumper",
+      "release": false
     },
     {
       "partStudio": "311a9ccaf4570ac11afc63e4",
@@ -142,6 +163,30 @@
       "partStudio": "56ce93b60ab3c76a7958d3b0",
       "partId": "JHD",
       "name": "softmount m2",
+      "release": false
+    },
+    {
+      "partStudio": "2c402cb86051e5448b669a7c",
+      "partId": "JFD",
+      "name": "Volumenkörper1",
+      "release": false
+    },
+    {
+      "partStudio": "895d7c7ee435929f9c3810ef",
+      "partId": "JFD",
+      "name": "Volumenkörper1",
+      "release": false
+    },
+    {
+      "partStudio": "ce4040f8422c737e03ecf548",
+      "partId": "JFD",
+      "name": "Volumenkörper1",
+      "release": false
+    },
+    {
+      "partStudio": "311a9ccaf4570ac11afc63e4",
+      "partId": "JQH",
+      "name": "m4 pressnut",
       "release": false
     }
   ],
