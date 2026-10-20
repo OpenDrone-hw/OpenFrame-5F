@@ -1,0 +1,212 @@
+{
+  "files": [
+    {
+      "path": "step/Arm.step",
+      "sha256": "69de945ff9ae947ab6961e7e85ea48f14688adeba3b3d838457bb370d838fb7a"
+    },
+    {
+      "path": "step/Cross.step",
+      "sha256": "f92c26730b2ce6179cc1d2f6a52d08cf87e8ee546c22c4d46e034aeaf564d943"
+    },
+    {
+      "path": "step/Base-Top.step",
+      "sha256": "92159da964c9d4e3fb6339001f11d9f471a4ff5c6f1aeade560559b65cd4fdbb"
+    },
+    {
+      "path": "step/Base-Bot.step",
+      "sha256": "d55944fbd4898fedba885671f2a349f08ba82cdd72b1ae86980ce92da159e3bd"
+    },
+    {
+      "path": "step/Top.step",
+      "sha256": "d749daccda303d46a1e5057194ab2c64ad96e70a992c2f7be5eb34543a7b60d6"
+    },
+    {
+      "path": "step/Standoff-L.step",
+      "sha256": "b388eb9a2000958b0789efd7578f18fde6a9349001eb5db086b8237c492e7a91"
+    },
+    {
+      "path": "step/18mmx4mm.step",
+      "sha256": "16e407c5478160b1c6292bc85ce6467cd3e572d539291996afc63e7ccc42cc6e"
+    },
+    {
+      "path": "step/Standoff-R.step",
+      "sha256": "921fc3fc4752a7e74510e6f6ae4efbfd9626c0c5a70870cf794a52412917787f"
+    },
+    {
+      "path": "step/Boot-L.step",
+      "sha256": "9309365aeedc44ef0c2c75238d003e9347b63ef5b5375c96dca54ab3cf973c07"
+    },
+    {
+      "path": "step/Boot-R.step",
+      "sha256": "7de44025f98c1936a32a82f4944bf36e1a5de3368785c924011824016d5ccab3"
+    },
+    {
+      "path": "step/Cam-Mount-L.step",
+      "sha256": "1256ac977c467472080e6194482e427332305b94de10225bba8584a9261610b3"
+    },
+    {
+      "path": "step/Airtag-Antenna-mount.step",
+      "sha256": "d0f9b10ba0b4010b402ebe4455db61ec44c47fe2b0d6cffebe0ca1aa23d4d039"
+    },
+    {
+      "path": "step/VTX-Mount.step",
+      "sha256": "c9f9e83fff3c7c20048c6ece74d7d872859b00cb346f2522d380a7a97b621f05"
+    },
+    {
+      "path": "step/anti-slip-pad.step",
+      "sha256": "2b7800b260d85676187a5e10fac4a21e70b94cb2ca98be5e121388e17796c492"
+    },
+    {
+      "path": "drawings/Drawing-1.pdf",
+      "sha256": "522bc068517fe2abb7f3f3c033afd400e2eb16c49e16c0108fb409e8d995941e"
+    }
+  ],
+  "document": {
+    "id": "78e093d02798373a79bc68d0",
+    "name": "OpenDrone-V2",
+    "url": "https://cad.onshape.com/documents/78e093d02798373a79bc68d0/w/c0ca752de47c1227bb727503"
+  },
+  "workspace": {
+    "id": "c0ca752de47c1227bb727503",
+    "name": "5\""
+  },
+  "version": {
+    "id": "821632c745022e85ee504876",
+    "name": "OpenFrame-5F rev2"
+  },
+  "microversion": "37189c0adbdf9f2badcc886d",
+  "elements": [
+    {
+      "id": "706f33d195388d882b65aa32",
+      "name": "frame",
+      "type": "PARTSTUDIO"
+    },
+    {
+      "id": "311a9ccaf4570ac11afc63e4",
+      "name": "pressnuts",
+      "type": "PARTSTUDIO"
+    },
+    {
+      "id": "56ce93b60ab3c76a7958d3b0",
+      "name": "Softmount",
+      "type": "PARTSTUDIO"
+    },
+    {
+      "id": "2c402cb86051e5448b669a7c",
+      "name": "DIN_EN_ISO_7380_M4x12.ipt",
+      "type": "PARTSTUDIO"
+    },
+    {
+      "id": "895d7c7ee435929f9c3810ef",
+      "name": "DIN_EN_ISO_7380_M3x12.ipt",
+      "type": "PARTSTUDIO"
+    },
+    {
+      "id": "ce4040f8422c737e03ecf548",
+      "name": "DIN_EN_ISO_7380_M3x8.ipt",
+      "type": "PARTSTUDIO"
+    },
+    {
+      "id": "fce8fc1bdf426e13532126f3",
+      "name": "OpenDrone-5",
+      "type": "ASSEMBLY"
+    },
+    {
+      "id": "248e177ed0d9d8fc9c2803c2",
+      "name": "Drawing 1",
+      "type": "DRAWING"
+    }
+  ],
+  "parts": [
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JHD",
+      "name": "Arm",
+      "path": "step/Arm.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JHH",
+      "name": "Cross",
+      "path": "step/Cross.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JKD",
+      "name": "Base-Top",
+      "path": "step/Base-Top.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JND",
+      "name": "Base-Bot",
+      "path": "step/Base-Bot.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JQD",
+      "name": "Top",
+      "path": "step/Top.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JsD",
+      "name": "Standoff-L",
+      "path": "step/Standoff-L.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "J+D",
+      "name": "18mmx4mm",
+      "path": "step/18mmx4mm.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "J/D",
+      "name": "Standoff-R",
+      "path": "step/Standoff-R.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "REBD",
+      "name": "Boot-L",
+      "path": "step/Boot-L.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RZBD",
+      "name": "Boot-R",
+      "path": "step/Boot-R.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RcBD",
+      "name": "Cam-Mount-L",
+      "path": "step/Cam-Mount-L.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RgBD",
+      "name": "Airtag/Antenna mount",
+      "path": "step/Airtag-Antenna-mount.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RDBH",
+      "name": "VTX-Mount",
+      "path": "step/VTX-Mount.step",
+      "sourceVersion": "814ba5092c6ec2a12ef5d43c",
+      "sourceMicroversion": "32a7779faef95828a3b27add"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RLED",
+      "name": "anti-slip pad",
+      "path": "step/anti-slip-pad.step",
+      "sourceVersion": "3443375633c8ca28000b5bf1",
+      "sourceMicroversion": "57768d6d87306c1ec19874bb"
+    }
+  ],
+  "exported_at": "2026-10-20T12:13:44Z",
+  "tool": "onshape_release.py"
+}
