@@ -1,0 +1,153 @@
+{
+  "files": [
+    {
+      "path": "step/Arm.step",
+      "sha256": "bf740d135edc0ce1aee741393c2bf0ad1834609face1ad5df4104578042a0d54"
+    },
+    {
+      "path": "step/Cross.step",
+      "sha256": "38a83f7e227ce11bf805f6943145151d2b2ef1a51ae00ce47417dca8b9047cd6"
+    },
+    {
+      "path": "step/Base-Top.step",
+      "sha256": "0edc07baca6ca71003b642f1a8a02e014fbf86d134808f57f3318d07b2852ba1"
+    },
+    {
+      "path": "step/Base-Bot.step",
+      "sha256": "dcef28e00aad1a24563f18e6dd273e60783c0bcb77f0f8fcda2e1373e80e8f23"
+    },
+    {
+      "path": "step/Top.step",
+      "sha256": "0f39f272a27a13732cbd24c1e6c2a490ab0a3d8aeb48552a7f09c043b978ee4a"
+    },
+    {
+      "path": "step/Standoff-L.step",
+      "sha256": "31e816b66f6030b243309bb647ef257dbfdd63d5d75d9f3231a4bb3d1d1bc61e"
+    },
+    {
+      "path": "step/Standoff-R.step",
+      "sha256": "fe0ecb97d34f7c8550d24abf6c198037354e48db3f73a1b303a8a8528db10767"
+    },
+    {
+      "path": "step/18mmx4mm.step",
+      "sha256": "65fbc32495329abcc077ff949c33e2613326cc41bc0e80caba9e6295398420f2"
+    },
+    {
+      "path": "step/VTX-Mount.step",
+      "sha256": "64a4354a57791cfa585204f1ef11437f9d042d437ba169f750029a7ac6064b07"
+    },
+    {
+      "path": "step/Boot-L.step",
+      "sha256": "dd0f20b9609a5759f85ab24eaa4afecdfdb1551466412e8742d82c408d213fb8"
+    },
+    {
+      "path": "step/Boot-R.step",
+      "sha256": "f78097eee0e25f4f3d4a6236c6d2aaa242890cd6233cf3c7369a3ee51fbfd582"
+    },
+    {
+      "path": "drawings/Drawing-1.pdf",
+      "sha256": "34d2d87e6e1ac5e90f5ac9e5fa18fa2c7ceb5c2a4e46ea971c57fb036ac9b08f"
+    }
+  ],
+  "document": {
+    "id": "78e093d02798373a79bc68d0",
+    "name": "OpenDrone-V2",
+    "url": "https://cad.onshape.com/documents/78e093d02798373a79bc68d0/w/c0ca752de47c1227bb727503"
+  },
+  "workspace": {
+    "id": "c0ca752de47c1227bb727503",
+    "name": "5\""
+  },
+  "version": {
+    "id": "fded7f25731a9f9d319974ca",
+    "name": "OpenFrame-5F rev1"
+  },
+  "microversion": "cf22b54cac77cb39826ba49c",
+  "elements": [
+    {
+      "id": "706f33d195388d882b65aa32",
+      "name": "frame",
+      "type": "PARTSTUDIO"
+    },
+    {
+      "id": "fce8fc1bdf426e13532126f3",
+      "name": "Assembly 1",
+      "type": "ASSEMBLY"
+    },
+    {
+      "id": "248e177ed0d9d8fc9c2803c2",
+      "name": "Drawing 1",
+      "type": "DRAWING"
+    }
+  ],
+  "parts": [
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JHD",
+      "name": "Arm",
+      "path": "step/Arm.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JHH",
+      "name": "Cross",
+      "path": "step/Cross.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JKD",
+      "name": "Base-Top",
+      "path": "step/Base-Top.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JND",
+      "name": "Base-Bot",
+      "path": "step/Base-Bot.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JQD",
+      "name": "Top",
+      "path": "step/Top.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JsD",
+      "name": "Standoff-L",
+      "path": "step/Standoff-L.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RABD",
+      "name": "Standoff-R",
+      "path": "step/Standoff-R.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "J/D",
+      "name": "18mmx4mm",
+      "path": "step/18mmx4mm.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RDBH",
+      "name": "VTX-Mount",
+      "path": "step/VTX-Mount.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RfBD",
+      "name": "Boot-L",
+      "path": "step/Boot-L.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "R0BD",
+      "name": "Boot-R",
+      "path": "step/Boot-R.step"
+    }
+  ],
+  "exported_at": "2026-10-20T12:09:10Z",
+  "tool": "onshape_release.py"
+}
