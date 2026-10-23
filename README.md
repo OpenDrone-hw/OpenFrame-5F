@@ -24,15 +24,16 @@ flowchart LR
 |---|---|
 | Source | [Onshape document OpenDrone-V2, workspace 5"](https://cad.onshape.com/documents/78e093d02798373a79bc68d0/w/c0ca752de47c1227bb727503) |
 | Link file | [`cad/onshape.json`](cad/onshape.json): document, workspace, element and part ids |
-| Released exports | `releases/<rev>/`, exported from a named Onshape version and never edited. No revision has been released yet. |
+| Released exports | `releases/<rev>/`, exported from a named Onshape version and never edited: [`rev1`](releases/rev1) (2026-07-05, first CNC samples) and [`rev2`](releases/rev2) (2026-10-20, first production batch) |
+| Changes per revision | [`CHANGELOG.md`](CHANGELOG.md), with the hardware list of each revision |
 | Parts per set | [`parts.csv`](parts.csv) |
 | Fasteners and hardware | [`hardware.csv`](hardware.csv) |
 | Standard | Incutec mechanical repository template |
 
 ## A set
 
-14 part types, 22 pieces, 8 of them carbon. Taken from the
-Onshape assembly (snapshot of 2026-10-09). Materials are as set in the Onshape model and blank where
+rev2. 14 part types, 22 pieces, 8 of them carbon. Taken from the
+Onshape assembly (version `OpenFrame-5F rev2`, 2026-10-20). Materials are as set in the Onshape model and blank where
 the model sets none; the process column is not from the model. Carbon plate and side plate (Standoff-L/R)
 thicknesses are measured values.
 VTX-Mount and anti-slip pad are taken from document versions `V4` and
@@ -76,8 +77,8 @@ M3x8 x6; M4x12 x4); `hardware.csv` lists them as one row with the split in `size
 
 ## Model checks
 
-Result of the Incutec Onshape model check, run offline on 2026-10-09 against the
-snapshot of workspace 5" in the Onshape document. A row stays until the model is fixed.
+Result of the Incutec Onshape model check, run on 2026-10-20 against the live
+workspace 5" in the Onshape document. A row stays until the model is fixed.
 
 | Check | Finding |
 |---|---|
@@ -88,6 +89,8 @@ snapshot of workspace 5" in the Onshape document. A row stays until the model is
 
 ## Key dimensions
 
+rev2, from the drawing in Onshape (`releases/rev2/drawings/Drawing-1.pdf`).
+
 | | 5" |
 |---|---|
 | Top plate | 2.5 mm |
@@ -96,16 +99,14 @@ snapshot of workspace 5" in the Onshape document. A row stays until the model is
 | Cross | 6.0 mm |
 | Arm | 6.0 mm |
 | Side plates (Standoff-L/R) | 7.0 mm |
-| Bolt holes | Ø3.1 (M3) |
-| Press-nut holes | Ø4.5 (M3) |
+| M3 bolt holes | Ø3 H8 (3.000-3.010) |
+| M4 bolt holes, bottom plate | Ø4 H8 (4.000-4.010) |
+| Insert holes, middle plate | M3 and M4, reference only: sized to the insert used |
 | Bolt-head counterbore | Ø5.8 (M3 ISO 7380) |
-| Countersink | none |
-| Camera mount thread | M3 |
 
 Chamfers 0.5 mm 45°, outer fillets R1.0 mm, inner fillets R1.05 mm unless the
-released drawing says otherwise. The cross-to-arm interface is a press fit and is the
-tightest tolerance in the design. These are design values: no drawings have been
-released from this repository yet.
+drawing says otherwise. The cross-to-arm fit is the tightest tolerance in the design:
+0.000-0.100 mm between both parts on the drawing.
 
 ## Licence
 
