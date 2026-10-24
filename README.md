@@ -24,7 +24,7 @@ flowchart LR
 |---|---|
 | Source | [Onshape document OpenDrone-V2, workspace 5"](https://cad.onshape.com/documents/78e093d02798373a79bc68d0/w/c0ca752de47c1227bb727503) |
 | Link file | [`cad/onshape.json`](cad/onshape.json): document, workspace, element and part ids |
-| Released exports | `releases/<rev>/`, exported from a named Onshape version and never edited: [`rev1`](releases/rev1) (2026-07-05, first CNC samples) and [`rev2`](releases/rev2) (2026-10-20, first production batch) |
+| Released exports | `releases/<rev>/`, exported from a named Onshape version and never edited: [`rev1`](releases/rev1) (2026-07-05, first CNC samples) and [`rev2`](releases/rev2) (2026-10-20; the 5" parts of handoff packages rev F and rev G, quoted for the first production frame batch) |
 | Changes per revision | [`CHANGELOG.md`](CHANGELOG.md), with the hardware list of each revision |
 | Parts per set | [`parts.csv`](parts.csv) |
 | Fasteners and hardware | [`hardware.csv`](hardware.csv) |
@@ -32,10 +32,11 @@ flowchart LR
 
 ## A set
 
-rev2. 14 part types, 22 pieces, 8 of them carbon. Taken from the
-Onshape assembly (version `OpenFrame-5F rev2`, 2026-10-20). Materials are as set in the Onshape model and blank where
-the model sets none; the process column is not from the model. Carbon plate and side plate (Standoff-L/R)
-thicknesses are measured values.
+Follows the Onshape branch `5in-fixes` (from version `OpenFrame-5F rev2`), the
+same as [`parts.csv`](parts.csv) and [`hardware.csv`](hardware.csv) on this git
+branch. Materials are as set in the Onshape model and blank where the model
+sets none; the process column is not from the model. Carbon plate and side
+plate (Standoff-L/R) thicknesses are measured values.
 VTX-Mount and anti-slip pad are taken from document versions `V4` and
 `antislip pad v2` (`sourceVersion` in `cad/onshape.json`). A version cannot
 be edited, so the model still gives VTX-Mount as PLA and the pad no material.
@@ -44,7 +45,7 @@ be edited, so the model still gives VTX-Mount as PLA and the pad no material.
 
 | Part | Qty | Material | Thickness | Made by |
 |---|---|---|---|---|
-| 18mmx4mm | 4 | Aluminum |  | CNC aluminium |
+| Standoff M3 F-F 20 OD5 | 4 | Aluminum |  | bought (7075 round, M3 F-F) |
 | Airtag/Antenna mount | 1 |  |  | 3D print, TPU |
 | anti-slip pad | 1 |  |  | moulded silicone |
 | Arm | 4 | Carbon fiber epoxy (61%) | 6 mm | CNC carbon plate |
@@ -59,21 +60,21 @@ be edited, so the model still gives VTX-Mount as PLA and the pad no material.
 | Top | 1 | Carbon fiber epoxy (61%) | 2.5 mm | CNC carbon plate |
 | VTX-Mount | 1 | PLA |  | 3D print, TPU |
 
-Fasteners and hardware per set, from the same assembly:
+Fasteners and hardware per set:
 
-| Item | Qty |
-|---|---|
-| m3 pressnut | 7 |
-| m4 pressnut | 4 |
-| Socket button head screw M3x0.5 x 22 | 4 |
-| Socket button head screw M3x0.5 x 6 | 18 |
-| softmount m2 | 8 |
-| Volumenkörper1 | 11 |
+| Item | Standard | Qty |
+|---|---|---|
+| Socket button head screw M4x0.7 x 14 | ISO 7380-1 | 4 |
+| Socket button head screw M3x0.5 x 12 | ISO 7380-1 | 1 |
+| Socket button head screw M3x0.5 x 8 | ISO 7380-1 | 8 |
+| Socket button head screw M3x0.5 x 6 | ISO 7380-1 | 10 |
+| Hex socket head cap screw M3x0.50 x 22 x 18 | ISO 4762 | 4 |
+| m3 pressnut |  | 7 |
+| m4 pressnut |  | 4 |
+| Grommet M3 |  | 8 |
 
-`m3 pressnut` and `m4 pressnut` are counted from the Onshape assembly. The three
-`Volumenkörper1` bodies are STEP imports of ISO 7380 screws (M3x12 x1, the centre bolt;
-M3x8 x6; M4x12 x4); `hardware.csv` lists them as one row with the split in `size`. The four M5 prop nuts belong to the motors and are left out of
-`hardware.csv`; `cad/onshape.json` lists them under `modelCheck.ignoreHardware`.
+The four M5 prop nuts belong to the motors and are left out of `hardware.csv`;
+`cad/onshape.json` lists them under `modelCheck.ignoreHardware`.
 
 ## Model checks
 
@@ -99,10 +100,10 @@ rev2, from the drawing in Onshape (`releases/rev2/drawings/Drawing-1.pdf`).
 | Cross | 6.0 mm |
 | Arm | 6.0 mm |
 | Side plates (Standoff-L/R) | 7.0 mm |
-| M3 bolt holes | Ø3 H8 (3.000-3.010) |
-| M4 bolt holes, bottom plate | Ø4 H8 (4.000-4.010) |
+| M3 bolt holes | Ø3; the Onshape drawing says H8 (3.000-3.010), the rev G spec says +0.03/0 (3.00-3.03) |
+| M4 bolt holes, bottom plate | Ø4; the Onshape drawing says H8 (4.000-4.010), the rev G spec says +0.03/0 (4.00-4.03) |
 | Insert holes, middle plate | M3 and M4, reference only: sized to the insert used |
-| Bolt-head counterbore | Ø5.8 (M3 ISO 7380) |
+| Bolt-head counterbore | Ø5.8 (M3 ISO 7380; Ø6.0 proposed in CHANGELOG.md) |
 
 Chamfers 0.5 mm 45°, outer fillets R1.0 mm, inner fillets R1.05 mm unless the
 drawing says otherwise. The cross-to-arm fit is the tightest tolerance in the design:

@@ -7,24 +7,24 @@ for every count below unless a row says otherwise.
 
 ```mermaid
 flowchart LR
-  R1["rev1<br/>2026-07-05<br/>first CNC samples"] --> R2["rev2<br/>2026-10-20<br/>first production batch"]
+  R1["rev1<br/>2026-07-05<br/>first CNC samples"] --> R2["rev2<br/>2026-10-20<br/>handoff rev F and G"]
 ```
 
 | Rev | Onshape version | Microversion | State of | Used for |
 |---|---|---|---|---|
 | rev1 | `OpenFrame-5F rev1` | `cf22b54cac77cb39826ba49c` | 2026-07-05 17:21 UTC | the first CNC sample frames, cut from these files |
-| rev2 | `OpenFrame-5F rev2` | `37189c0adbdf9f2badcc886d` | 2026-10-20 | the first production batch (handoff packages rev F and rev G, the 5" parts are the same in both) |
+| rev2 | `OpenFrame-5F rev2` | `37189c0adbdf9f2badcc886d` | 2026-10-20 | quoted for the first production frame batch, not ordered on 2026-10-24 (handoff packages rev F and rev G, the 5" parts are the same in both) |
 
 ## Model review, 2026-10-24
 
 Onshape workspace 5" is unchanged since rev2 (handoff package rev G changed
 the 3" only). Fixes go into the Onshape branch `5in-fixes` (from rev2) and
-reach the workspace when it is merged. On the branch the stack screws are ISO 4762 M3x22 and every standard screw is steel class 12.9, black; the mate errors are the 7 that rev2 already had (arm and cross mates). `hardware.csv` and `parts.csv` on the matching git branch follow the Onshape branch.
+reach the workspace when it is merged. On the branch the stack screws are ISO 4762 M3x22 and every standard frame screw is steel class 12.9 with finish Black; the mate errors are the 7 that rev2 already had (arm and cross mates). `hardware.csv` and `parts.csv` on the matching git branch follow the Onshape branch.
 
 | Item | Finding | Proposed | Branch `5in-fixes` |
 |---|---|---|---|
 | Arm screws | M4x12 through 3 + 6 + 3 mm: the tip ends exactly at the top of the 2.4 mm insert, no margin | M4x14 | done: ISO 7380 M4x14 (standard content), mates rebuilt, tip 2 mm past the insert |
-| Rule for screws into threads | no check today | length = everything under the head + full insert length + 0.5 to 1.5 mm | open |
+| Rule for screws into threads | no check today | length = everything under the head + full insert length + 0.5 to 2 mm, rounded up to a stocked length | open |
 | Duplicate screws | 4 M3x6 + 4 M3x8 in the same 4 top side plate holes; 2 M3x6 + 2 M3x8 in the same 2 holes under the bumper | keep one per hole: hardware.csv counts 6 screws twice | done: the 6 M3x6 removed, the M3x8 kept, mates kept |
 | Side plate threads | M3x6 into aluminium gives 3 to 3.5 mm of thread; tap depths are 3.5 to 6 mm | M3x8 where the tap depth allows | done for the 2 bottom side plate screws (M3x8, 5 mm in a 6 mm tap). The 2 top screws at y -53 keep 3.5 mm of thread: that tap hole runs into a pocket of the side plate, so a longer screw does not add thread |
 | Imported screws | `Volumenkörper1` STEP bodies | Onshape standard content, so the BOM shows size and standard | done: all 11 replaced by Onshape standard content ISO 7380 (M4x14, M3x12, 6 x M3x8), positions checked against rev2 |
@@ -53,7 +53,7 @@ and not on the standoff screws (removed for maintenance).
 | Printed parts | anti-slip pad, Airtag/antenna mount and Cam-Mount-L added; boots are 2x Boot-L + 2x Boot-R |
 | Hardware in CAD | rev1 had no screws in the assembly; rev2 has them |
 
-Hardware per set, rev2, from the Onshape assembly. This list is the same as [`hardware.csv`](hardware.csv).
+Hardware per set, rev2, from the Onshape assembly. This is the rev2 list; [`hardware.csv`](hardware.csv) follows the Onshape branch `5in-fixes`.
 
 | Item | Standard | Qty |
 |---|---|---|
