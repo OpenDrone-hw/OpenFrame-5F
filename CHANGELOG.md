@@ -26,7 +26,7 @@ reach the workspace when it is merged. On the branch the stack screws are ISO 47
 | Arm screws | M4x12 through 3 + 6 + 3 mm: the tip ends exactly at the top of the 2.4 mm insert, no margin | M4x14 | done: ISO 7380 M4x14 (standard content), mates rebuilt, tip 2 mm past the insert |
 | Rule for screws into threads | no check today | length = everything under the head + full insert length + 0.5 to 1.5 mm | open |
 | Duplicate screws | 4 M3x6 + 4 M3x8 in the same 4 top side plate holes; 2 M3x6 + 2 M3x8 in the same 2 holes under the bumper | keep one per hole: hardware.csv counts 6 screws twice | done: the 6 M3x6 removed, the M3x8 kept, mates kept |
-| Side plate threads | M3x6 into aluminium gives 3 to 3.5 mm of thread; tap depths are 3.5 to 6 mm | M3x8 where the tap depth allows | open |
+| Side plate threads | M3x6 into aluminium gives 3 to 3.5 mm of thread; tap depths are 3.5 to 6 mm | M3x8 where the tap depth allows | done for the 2 bottom side plate screws (M3x8, 5 mm in a 6 mm tap). The 2 top screws at y -53 keep 3.5 mm of thread: that tap hole runs into a pocket of the side plate, so a longer screw does not add thread |
 | Imported screws | `Volumenkörper1` STEP bodies | Onshape standard content, so the BOM shows size and standard | done: all 11 replaced by Onshape standard content ISO 7380 (M4x14, M3x12, 6 x M3x8), positions checked against rev2 |
 | McMaster flat head screws | 5 instances, part of the DJI O4 Pro reference subassembly, not frame hardware | keep; leave out of the BOM | n/a |
 | Insert holes | one M3 insert hole is Ø4.6, the other six Ø4.5; no insert part number yet | model the chosen insert and size every hole from it | Ø4.5 on all 7 done; insert: Part Studio `Insert M3 (provisional)`, PEM KFS2-M3 values |
