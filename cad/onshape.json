@@ -151,7 +151,7 @@
       "partStudio": "706f33d195388d882b65aa32",
       "partId": "RKCD",
       "name": "Bumper",
-      "release": false
+      "release": true
     },
     {
       "partStudio": "311a9ccaf4570ac11afc63e4",
