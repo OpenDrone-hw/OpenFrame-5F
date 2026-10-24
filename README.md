@@ -56,13 +56,12 @@ SHA-256 per file) and never edited. rev2.2 is the Onshape version
 |---|---|
 | Source | [Onshape document OpenDrone-V2](https://cad.onshape.com/documents/78e093d02798373a79bc68d0/w/c0ca752de47c1227bb727503) |
 | Link file | [`cad/onshape.json`](cad/onshape.json): document, workspace, element and part ids |
-| Parts per set | [`parts.csv`](parts.csv) |
-| Fasteners and hardware | [`hardware.csv`](hardware.csv), counted from the assembly |
+| Bill of materials | [`bom.csv`](bom.csv): every part and every piece of hardware in a set, counted from the assembly |
 | Standard | Incutec mechanical repository template |
 
 ## What is in a set
 
-From [`parts.csv`](parts.csv) (rev2.2). Materials are as set in the Onshape
+From [`bom.csv`](bom.csv) (rev2.2). Materials are as set in the Onshape
 model and blank where the model sets none (printed parts are marked PLA in the
 model and printed in TPU); the process column is not from the model.
 
@@ -139,7 +138,7 @@ The bumper holes get an M3x6 without the bumper and an M3x8 with it; both ship.
 
 Motor screws (16 x M3x8) and the M5 prop nuts ship with the motors and props and are not frame hardware.
 
-Hardware per set as counted in the Onshape assembly ([`hardware.csv`](hardware.csv)):
+Hardware per set as counted in the Onshape assembly ([`bom.csv`](bom.csv), kind `hardware`):
 
 | Item | Standard | Size | Qty |
 |---|---|---|---|

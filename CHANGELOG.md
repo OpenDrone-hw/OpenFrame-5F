@@ -66,7 +66,7 @@ Open after rev2.2:
 | Printed parts | anti-slip pad, Airtag/antenna mount and Cam-Mount-L added; boots are 2x Boot-L + 2x Boot-R |
 | Hardware in CAD | rev1 had no screws in the assembly; rev2 has them |
 
-Hardware per set, rev2, from the Onshape assembly. This is the rev2 list; [`hardware.csv`](hardware.csv) follows rev2.2.
+Hardware per set, rev2, from the Onshape assembly. This is the rev2 list; [`bom.csv`](bom.csv) follows rev2.2.
 
 | Item | Standard | Qty |
 |---|---|---|

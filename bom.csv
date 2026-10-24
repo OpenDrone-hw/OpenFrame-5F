@@ -1,0 +1,26 @@
+item,kind,category,qty_per_set,material,thickness_mm,standard,size,process,sku,onshape_part,notes
+Arm,part,carbon,4,Carbon fiber epoxy (61%),6,,,CNC carbon plate,ACC-FRM-ARM-5,JHD,arm
+Base-Bot,part,carbon,1,Carbon fiber epoxy (61%),3,,,CNC carbon plate,ACC-FRM-BOT-5,JND,plate
+Base-Top,part,carbon,1,Carbon fiber epoxy (61%),3,,,CNC carbon plate,ACC-FRM-MID-5,JKD,plate
+Cross,part,carbon,1,Carbon fiber epoxy (61%),6,,,CNC carbon plate,ACC-FRM-CROSS-5,JHH,cross
+Top,part,carbon,1,Carbon fiber epoxy (61%),2.5,,,CNC carbon plate,ACC-FRM-TOP-5,JQD,plate
+Standoff-L,part,aluminium,1,Aluminum,7,,,CNC aluminium,,JsD,camera side plate
+Standoff-R,part,aluminium,1,Aluminum,7,,,CNC aluminium,,J/D,camera side plate
+Standoff M3 F-F 20 OD5,part,bought,4,Aluminum,,,,"bought (7075 round, M3 F-F)",,J+D,standoff
+anti-slip pad,part,moulded,1,,,,,moulded silicone,,RLED,pad
+Airtag/Antenna mount,part,printed,1,,,,,"3D print, TPU",,RgBD,mount
+Boot-L,part,printed,2,,,,,"3D print, TPU",,REBD,arm boot
+Boot-R,part,printed,2,,,,,"3D print, TPU",,RZBD,arm boot
+Bumper,part,printed,1,,,,,"3D print, TPU",,RKCD,bumper
+Cam-Mount-L,part,printed,1,,,,,"3D print, TPU",,RcBD,camera soft mount
+Cam-Mount-R,part,printed,1,,,,,"3D print, TPU",,R1BD,camera soft mount
+VTX-Mount,part,printed,1,PLA,,,,"3D print, TPU",,RDBH,air unit mount
+Socket button head screw M4x0.7 x 12,hardware,fastener,4,,,ISO 7380-1,M4x12,bought,,,"arms into the M4 inserts; tip flush with the insert top, 2.4 mm under the ESC. Steel class 12.9, black. Nylon patch"
+Socket button head screw M3x0.5 x 12,hardware,fastener,1,,,ISO 7380-1,M3x12,bought,,,"centre through the cross. Steel class 12.9, black. Nylon patch"
+Socket button head screw M3x0.5 x 6,hardware,fastener,18,,,ISO 7380-1,M3x6,bought,,,"8 standoff ends, 8 camera side plates (the 2 at the bumper are the no-bumper option), nylon patch; 2 Airtag/Antenna mount (TPU), no patch. Steel class 12.9, black"
+Socket button head screw M3x0.5 x 8,hardware,fastener,18,,,ISO 7380-1,M3x8,bought,,,"2 bumper option (through Bumper), no patch; the other 16 are motor screws, shipped with the motors, not frame hardware. Steel class 12.9, black"
+Hex socket head cap screw M3x0.50 x 20,hardware,fastener,4,,,ISO 4762,M3x20,bought,,,"stack through the M3 inserts, nylon lock nut on top. Length kept: the grommets compress when the stack is tightened (founder 2026-10-24). Steel class 12.9, black. No patch"
+Prevailing torque nut thin M3x0.50,hardware,fastener,4,,,ISO 10511,M3,bought,,,"stack, on top of the grommets. Nylon insert"
+m3 pressnut,hardware,insert,7,,,,M3,bought,,,"threaded insert, middle plate, pressed in by the carbon supplier"
+m4 pressnut,hardware,insert,4,,,,M4,bought,,,"threaded insert, middle plate, pressed in by the carbon supplier"
+Grommet M3,hardware,grommet,8,,,,M3,bought,,,stack soft mount
