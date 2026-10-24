@@ -129,7 +129,7 @@
       "partStudio": "706f33d195388d882b65aa32",
       "partId": "R1BD",
       "name": "Cam-Mount-R",
-      "release": false
+      "release": true
     },
     {
       "elementId": "706f33d195388d882b65aa32",

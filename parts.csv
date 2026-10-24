@@ -9,6 +9,7 @@ Boot-L,arm boot,,,2,"3D print, TPU",,REBD
 Boot-R,arm boot,,,2,"3D print, TPU",,RZBD
 Bumper,bumper,,,1,"3D print, TPU",,RKCD
 Cam-Mount-L,camera soft mount,,,1,"3D print, TPU",,RcBD
+Cam-Mount-R,camera soft mount,,,1,"3D print, TPU",,R1BD
 Cross,cross,Carbon fiber epoxy (61%),6,1,CNC carbon plate,ACC-FRM-CROSS-5,JHH
 Standoff-L,camera side plate,Aluminum,7,1,CNC aluminium,,JsD
 Standoff-R,camera side plate,Aluminum,7,1,CNC aluminium,,J/D

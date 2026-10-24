@@ -15,7 +15,8 @@ incutec OpenDrone line. The 3" and 5" frames are separate repositories:
 The CNC carbon parts, the CNC aluminium camera side plates and the bought
 hardware are final in rev3. The printed TPU parts are preliminary: they
 fit the DJI O4 Pro only and will change to fit more video systems. They are
-printed by Incutec in black and PCB green.
+printed by Incutec in black and PCB green. The aluminium camera side plates
+are anodised Pantone 7549 C (gold).
 
 ## At a glance
 
@@ -112,6 +113,7 @@ flowchart TB
 | Boot-R | arm boot | 2 |  |
 | Bumper | bumper | 1 |  |
 | Cam-Mount-L | camera soft mount | 1 |  |
+| Cam-Mount-R | camera soft mount | 1 |  |
 | VTX-Mount | air unit mount | 1 |  |
 
 Threaded inserts (7 x M3 + 4 x M4) are pressed into the middle plate by the
@@ -130,7 +132,7 @@ The bumper holes get an M3x6 without the bumper and an M3x8 with it; both ship.
 | `FAS-M3X6-BH-NP` | ISO 7380-1 M3x6 | yes | 16 | 18 | camera side plates, standoff ends |
 | `FAS-M3X6-BH` | ISO 7380-1 M3x6 | no | 2 | 4 | AirTag/antenna mount |
 | `FAS-M3X8-BH` | ISO 7380-1 M3x8 | no | 2 | 4 | bumper option |
-| `FAS-M3X20-SHCS` | ISO 4762 M3x20 (M3x22 proposed) | no | 4 | 6 | stack |
+| `FAS-M3X20-SHCS` | ISO 4762 M3x20 | no | 4 | 6 | stack |
 | `FAS-NUT-M3-NYL` | ISO 10511 thin nylon lock nut M3 |  | 4 | 6 | stack |
 | `GRM-M3-SIL50` | silicone grommet M3 |  | 8 | 8 | stack |
 | `FRM-SO-5-20` | standoff M3 F-F 20 mm OD 5, aluminium |  | 4 | 4 |  |
@@ -161,9 +163,9 @@ revision (see [`CHANGELOG.md`](CHANGELOG.md)).
 |---|---|
 | Screws into inserts | arm M4x12 and centre M3x12 end flush with the 2.4 mm inserts; the ESC is 2.4 mm above the arm screws |
 | Side plate screws | 3.0 to 3.5 mm of thread |
-| Stack | M3x20 ends 0.9 mm below the top of the nylon lock nut: M3x22 proposed |
+| Stack | M3x20 with a thin nylon lock nut: 3.0 mm in the nut before the grommets are compressed; the grommets compress when tightened, so the tip reaches through the nylon ring |
 | Duplicates | none (the bumper M3x6 / M3x8 pair is the deliberate option) |
-| Model | one `Bumper` instance has no source part; `Cam-Mount-R` is in the Part Studio, not in the assembly |
+| Model | one `Bumper` instance has no source part; `Cam-Mount-R` was placed in the assembly after the version (its STEP is in the release) |
 
 ## Key dimensions
 

@@ -21,7 +21,8 @@ flowchart LR
 The final state of every CNC carbon part, both CNC aluminium camera side
 plates and the bought hardware (founder, 2026-10-24). The printed TPU parts
 are preliminary: they fit the DJI O4 Pro only and will change for more video
-systems. Shipped TPU colours are black and PCB green, as in the CAD.
+systems. Shipped TPU colours are black and PCB green, as in the CAD. The aluminium
+camera side plates are anodised Pantone 7549 C (gold).
 
 Made by the founder as version `fixed and standardised` of the Onshape branch
 `5in-fixes` (from rev2). Geometry compared with rev2 / handoff packages rev F
@@ -30,11 +31,11 @@ and G (STEP, 2026-10-24): cross and bottom plate unchanged.
 | Change from rev2 | Detail |
 |---|---|
 | Top plate | holes added for future GPS mounts (one field of about 15 x 8 mm) |
-| Arm | motor centre bore Ø6.0 becomes Ø7.0 |
+| Arm | motor centre bore Ø6.0 becomes Ø7.0 (founder) |
 | Middle plate | the one Ø4.6 M3 insert hole becomes Ø4.5 like the other six |
 | Camera side plates (Standoff-L/R) | M3 tap drill Ø2.6 becomes Ø2.5 (the spec value) |
 | Arm screws | ISO 7380-1 M4x12: the tip ends flush with the top of the 2.4 mm insert and 2.4 mm under the ESC. An M4x14 would end 0.37 mm under the ESC board |
-| Stack | ISO 4762 M3x20 with an ISO 10511 thin nylon lock nut on top (was a button head M3x22 into the inserts). The M3x20 tip stops 0.9 mm below the top of the nut, so the nylon ring does not grip: M3x22 proposed, 1.0 mm under the top plate |
+| Stack | ISO 4762 M3x20 with an ISO 10511 thin nylon lock nut on top (was a button head M3x22 into the inserts). Uncompressed, the M3x20 tip ends 0.9 mm below the top of the nut; the rubber grommets compress when the stack is tightened, so the length stays (founder) |
 | M3x6 for most screws | standoff ends, camera side plates and AirTag mount: 3.0 to 3.5 mm of thread (founder, after building a 5" rev1). The doubled M3x6 + M3x8 in 6 holes are gone |
 | Bumper | the two rear bottom side plate holes take an M3x6 without the bumper and an M3x8 with it; both are modelled and both ship |
 | Imported screws | the `Volumenkörper1` STEP bodies replaced by Onshape standard content |
@@ -45,8 +46,7 @@ Open after rev3:
 
 | Item | State |
 |---|---|
-| Stack screw length | M3x20 in the CAD, M3x22 proposed (nylon nut) |
-| Model | one `Bumper` instance has no source part; `Cam-Mount-R` is not in the assembly |
+| Model | one `Bumper` instance has no source part. `Cam-Mount-R` was placed in the assembly after the version; its STEP is in `releases/rev3/` |
 | Counterbore for M3 button heads | Ø5.8 on the drawing, Ø6.0 proposed (an ISO 7380 M3 head is up to 5.7 mm) |
 | Drawing in Onshape | title block reads "OpenDrone Frame 3""; gives H8 holes; rev G gives +0.03/0 and the insert notes |
 | Insert | supplier insert type and part number open |

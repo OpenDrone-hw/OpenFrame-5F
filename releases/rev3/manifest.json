@@ -63,6 +63,10 @@
     {
       "path": "step/Bumper.step",
       "sha256": "9f5c9fe1890025091d6a79b37a75be85ab9791744925929c03cd07c9ac13b547"
+    },
+    {
+      "path": "step/Cam-Mount-R.step",
+      "sha256": "a3050c9ce3dbfe49dd0c247517321c0623f3ac1dabcb458b565b53234ebec933"
     }
   ],
   "document": {
@@ -217,8 +221,15 @@
       "partId": "RKCD",
       "name": "Bumper",
       "path": "step/Bumper.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "R1BD",
+      "name": "Cam-Mount-R",
+      "path": "step/Cam-Mount-R.step"
     }
   ],
   "exported_at": "2026-10-24T11:13:00Z",
-  "tool": "onshape_release.py manifest format; exported through the browser session (Onshape API key over quota), founder-made version"
+  "tool": "onshape_release.py manifest format; exported through the browser session (Onshape API key over quota), founder-made version",
+  "note": "Cam-Mount-R exported from the same version; the founder placed it in the assembly on branch 5in-fixes after the version was made (2026-10-24)."
 }
