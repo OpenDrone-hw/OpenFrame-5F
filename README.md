@@ -30,6 +30,7 @@ are anodised Pantone 7549 C (gold).
 | Stack mount | 30.5 x 30.5 M3 (inserts) |
 | Motor mount | 16 x 16, M3 |
 | Standoffs | 20 mm, M3 female-female, OD 5 |
+| Weight | 170 g measured: carbon, aluminium and hardware, without the TPU parts |
 
 ## Revisions
 
