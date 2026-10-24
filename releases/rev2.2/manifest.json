@@ -10,7 +10,7 @@
     },
     {
       "path": "step/Base-Top.step",
-      "sha256": "eb6b27d14afc717a9b99bf1c8976bbbaa208f9457748b53e98151a9fc48afbf3"
+      "sha256": "28074c26e7a674f75a5c16eab4f30821e275c0c4f9cc434ced0edcbd96dc445a"
     },
     {
       "path": "step/Base-Bot.step",
@@ -22,7 +22,7 @@
     },
     {
       "path": "step/Standoff-L.step",
-      "sha256": "eeebf42df0f56782930a6099c805e4f34f10f511c043bc74bd0886a4e1ba7c91"
+      "sha256": "1b01cf10fb440f11400bd72386fb596af89b6235284e05fa21d0124c86725ad8"
     },
     {
       "path": "step/Standoff-M3-F-F-20-OD5.step",
@@ -30,7 +30,7 @@
     },
     {
       "path": "step/Standoff-R.step",
-      "sha256": "17ad6650277a2538ad391e9cb3f621dc35d71ecdbf34446538bce2d4e9b0cc87"
+      "sha256": "ff99e5caa605ba44f68af114b3baa02c94a01014ccbf091a401368489392b925"
     },
     {
       "path": "step/Boot-L.step",
@@ -58,7 +58,7 @@
     },
     {
       "path": "drawings/Drawing-1.pdf",
-      "sha256": "ac26427f282811e2b073a204c972fac745eb4495bbf059d43abf9c6a7692cb49"
+      "sha256": "01a8427185a49fc566e0127a78bdd33d6ffddedff27bda65d1370f47188d29c4"
     },
     {
       "path": "step/Bumper.step",
@@ -79,12 +79,12 @@
     "name": "5in-fixes"
   },
   "version": {
-    "id": "985812b22ce4e4710422aff4",
-    "name": "fixed and standardised",
-    "created": "2026-10-24T10:54Z",
+    "id": "33165a4daaf0e16179ef0d00",
+    "name": "OpenFrame-5F rev2.2",
+    "created": "2026-10-24T21:00Z",
     "label": "rev2.2"
   },
-  "microversion": "87dee3a021abd49e11b659d6",
+  "microversion": "c23f686912412e6e5cfb6598",
   "elements": [
     {
       "id": "706f33d195388d882b65aa32",
@@ -229,7 +229,7 @@
       "path": "step/Cam-Mount-R.step"
     }
   ],
-  "exported_at": "2026-10-24T11:13:00Z",
+  "exported_at": "2026-10-24T21:05:00Z",
   "tool": "onshape_release.py manifest format; exported through the browser session (Onshape API key over quota), founder-made version",
-  "note": "Cam-Mount-R exported from the same version; the founder placed it in the assembly on branch 5in-fixes after the version was made (2026-10-24)."
+  "note": "Re-released 2026-10-24 evening from version OpenFrame-5F rev2.2: middle-plate nut holes for catalogue self-clinching nuts (M3 4.22 + seat 6.7 x 1.55, M4 5.4 + seat 8.1 x 1.55) and camera-mount hole depths; Base-Top, Standoff-L, Standoff-R and the drawing PDF are exported from this version; the other STEP files are the earlier rev2.2 export, checked geometrically identical to this version (boolean difference 0)."
 }
