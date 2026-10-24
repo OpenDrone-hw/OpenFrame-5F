@@ -38,8 +38,8 @@ reach the workspace when it is merged. On the branch the stack screws are ISO 47
 
 Hardware spec (2026-10-24): every screw black-oxide alloy steel, class 12.9.
 M3 and M4 button heads ISO 7380-1, countersunk ISO 10642. Nylon patch on the
-arm, centre, camera side plate and stack screws only; not on screws into TPU
-and not on the standoff screws (removed for maintenance).
+arm, centre, camera side plate, standoff and stack screws; not on screws with TPU
+under the head (AirTag mount).
 
 ## rev2
 
