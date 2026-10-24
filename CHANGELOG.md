@@ -7,16 +7,18 @@ for every count below unless a row says otherwise.
 
 ```mermaid
 flowchart LR
-  R1["rev1<br/>2026-07-05<br/>first CNC samples"] --> R2["rev2<br/>2026-10-20<br/>handoff rev F and G"] --> R3["rev3<br/>2026-10-24<br/>final CNC and hardware"]
+  R1["rev1<br/>2026-07-05<br/>first CNC samples"] --> R2["rev2<br/>2026-10-20<br/>handoff rev F and G"] --> R3["rev2.2<br/>2026-10-24<br/>final CNC and hardware"]
 ```
 
 | Rev | Onshape version | Microversion | State of | Used for |
 |---|---|---|---|---|
 | rev1 | `OpenFrame-5F rev1` | `cf22b54cac77cb39826ba49c` | 2026-07-05 17:21 UTC | the first CNC sample frames, cut from these files |
 | rev2 | `OpenFrame-5F rev2` | `37189c0adbdf9f2badcc886d` | 2026-10-20 | quoted for the first production frame batch, not ordered on 2026-10-24 (handoff packages rev F and rev G, the 5" parts are the same in both) |
-| rev3 | `fixed and standardised` (branch `5in-fixes`) | `87dee3a021abd49e11b659d6` | 2026-10-24 10:54 UTC | final CNC carbon, CNC aluminium and bought hardware. [`releases/rev3/`](releases/rev3) |
+| rev2.2 | `fixed and standardised` (branch `5in-fixes`) | `87dee3a021abd49e11b659d6` | 2026-10-24 10:54 UTC | final CNC carbon, CNC aluminium and bought hardware. [`releases/rev2.2/`](releases/rev2.2) |
 
-## rev3
+rev1 is the only revision produced so far. rev2.x is the next production: rev2 (handoff packages rev F and G) and rev2.2, the final CNC parts and hardware. There is no 5" rev2.1: the numbers follow the 3", so a frame set has one revision.
+
+## rev2.2
 
 The final state of every CNC carbon part, both CNC aluminium camera side
 plates and the bought hardware (founder, 2026-10-24). The printed TPU parts
@@ -42,11 +44,11 @@ and G (STEP, 2026-10-24): cross and bottom plate unchanged.
 | Screw finish | every frame screw steel class 12.9, black. Nylon patch on the arm, centre, camera side plate and standoff screws; none on the stack screws or on screws with TPU under the head |
 | Parts | `18mmx4mm` renamed `Standoff M3 F-F 20 OD5` (bought, 7075); `softmount m2` renamed `Grommet M3`; Part Studio `Insert M3 (provisional)` added |
 
-Open after rev3:
+Open after rev2.2:
 
 | Item | State |
 |---|---|
-| Model | one `Bumper` instance has no source part. `Cam-Mount-R` was placed in the assembly after the version; its STEP is in `releases/rev3/` |
+| Model | one `Bumper` instance has no source part. `Cam-Mount-R` was placed in the assembly after the version; its STEP is in `releases/rev2.2/` |
 | Counterbore for M3 button heads | Ø5.8 on the drawing, Ø6.0 proposed (an ISO 7380 M3 head is up to 5.7 mm) |
 | Drawing in Onshape | title block reads "OpenDrone Frame 3""; gives H8 holes; rev G gives +0.03/0 and the insert notes |
 | Insert | supplier insert type and part number open |
@@ -64,7 +66,7 @@ Open after rev3:
 | Printed parts | anti-slip pad, Airtag/antenna mount and Cam-Mount-L added; boots are 2x Boot-L + 2x Boot-R |
 | Hardware in CAD | rev1 had no screws in the assembly; rev2 has them |
 
-Hardware per set, rev2, from the Onshape assembly. This is the rev2 list; [`hardware.csv`](hardware.csv) follows rev3.
+Hardware per set, rev2, from the Onshape assembly. This is the rev2 list; [`hardware.csv`](hardware.csv) follows rev2.2.
 
 | Item | Standard | Qty |
 |---|---|---|
