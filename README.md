@@ -6,7 +6,7 @@ incutec OpenDrone line. The 3" and 5" frames are separate repositories:
 [OpenFrame-5F](https://github.com/OpenDrone-hw/OpenFrame-5F).
 
 <p>
-<img src="images/assembly.png" width="420" alt="OpenFrame-5F assembled, render" />
+<img src="images/assembly.png" width="420" alt="OpenFrame-5F assembled, frame and hardware only, render" />
 <img src="images/exploded.png" width="420" alt="OpenFrame-5F exploded view, render" />
 </p>
 
@@ -120,6 +120,8 @@ Threaded inserts (7 x M3 + 4 x M4) are pressed into the middle plate by the
 carbon supplier.
 
 ## Hardware kit
+
+<img src="images/kit.png" width="860" alt="OpenFrame-5F kit laid out, render: letters are frame and printed parts, numbers the hardware kit" />
 
 One bag per frame: every screw and nut kind of the frame plus 2 spares
 (41 screws in 6 kinds). Every screw is black-oxide alloy steel, class 12.9.
