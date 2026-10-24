@@ -19,15 +19,15 @@ flowchart LR
 
 Onshape workspace 5" is unchanged since rev2 (handoff package rev G changed
 the 3" only). Fixes go into the Onshape branch `5in-fixes` (from rev2) and
-reach the workspace when it is merged:
+reach the workspace when it is merged. On the branch the stack screws are ISO 4762 M3x22 and every standard screw is steel class 12.9, black; the mate errors are the 7 that rev2 already had (arm and cross mates). `hardware.csv` and `parts.csv` on the matching git branch follow the Onshape branch.
 
 | Item | Finding | Proposed | Branch `5in-fixes` |
 |---|---|---|---|
-| Arm screws | M4x12 through 3 + 6 + 3 mm: the tip ends exactly at the top of the 2.4 mm insert, no margin | M4x14 | open |
+| Arm screws | M4x12 through 3 + 6 + 3 mm: the tip ends exactly at the top of the 2.4 mm insert, no margin | M4x14 | done: ISO 7380 M4x14 (standard content), mates rebuilt, tip 2 mm past the insert |
 | Rule for screws into threads | no check today | length = everything under the head + full insert length + 0.5 to 1.5 mm | open |
 | Duplicate screws | 4 M3x6 + 4 M3x8 in the same 4 top side plate holes; 2 M3x6 + 2 M3x8 in the same 2 holes under the bumper | keep one per hole: hardware.csv counts 6 screws twice | done: the 6 M3x6 removed, the M3x8 kept, mates kept |
 | Side plate threads | M3x6 into aluminium gives 3 to 3.5 mm of thread; tap depths are 3.5 to 6 mm | M3x8 where the tap depth allows | open |
-| Imported screws | `Volumenkörper1` STEP bodies | Onshape standard content, so the BOM shows size and standard | renamed `Button head screw ISO 7380 M4x12 / M3x12 / M3x8`; still STEP bodies |
+| Imported screws | `Volumenkörper1` STEP bodies | Onshape standard content, so the BOM shows size and standard | done: all 11 replaced by Onshape standard content ISO 7380 (M4x14, M3x12, 6 x M3x8), positions checked against rev2 |
 | McMaster flat head screws | 5 instances, part of the DJI O4 Pro reference subassembly, not frame hardware | keep; leave out of the BOM | n/a |
 | Insert holes | one M3 insert hole is Ø4.6, the other six Ø4.5; no insert part number yet | model the chosen insert and size every hole from it | Ø4.5 on all 7 done; insert: Part Studio `Insert M3 (provisional)`, PEM KFS2-M3 values |
 | Side plate tap drill | Ø2.6 in the model, the spec asks Ø2.5 | Ø2.5 | done |

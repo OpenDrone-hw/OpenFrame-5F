@@ -1,7 +1,9 @@
 item,standard,size,qty_per_set,notes
-m3 pressnut,,,7,from the Onshape assembly
-m4 pressnut,,,4,from the Onshape assembly
-Socket button head screw M3x0.5 x 22,ISO 7380,M3x22,4,"from the Onshape assembly; stack, into the M3 inserts. ISO 4762 is the usual stack screw. Nylon patch"
-Socket button head screw M3x0.5 x 6,ISO 7380,M3x6,18,"from the Onshape assembly; 8 standoff ends, 4 top and 4 bottom camera side plates, 2 Airtag/Antenna mount. 6 of them share a hole with an M3x8 (4 top side plates, 2 under the bumper): the set needs 12"
-softmount m2,,,8,"from the Onshape assembly; sits on the M3 stack screws: the part is an M3 grommet, size still open"
-Volumenkörper1,ISO 7380,M3x12 x1; M3x8 x6; M4x12 x4,11,"from the Onshape assembly; three unnamed STEP imports (Part Studios DIN_EN_ISO_7380_*), sizes from the Part Studio names. M4x12: the 4 arms, tip ends at the top of the 2.4 mm insert, proposed M4x14 (nylon patch). M3x12: centre through the cross (nylon patch). M3x8: 4 top camera side plates and 2 through the bumper, each sharing a hole with an M3x6"
+Socket button head screw M4x0.7 x 14,ISO 7380-1,M4x14,4,"arms into the M4 inserts, tip 2 mm past the insert. Steel class 12.9, black. Nylon patch"
+Socket button head screw M3x0.5 x 12,ISO 7380-1,M3x12,1,"centre through the cross. Steel class 12.9, black. Nylon patch"
+Socket button head screw M3x0.5 x 8,ISO 7380-1,M3x8,6,"4 top camera side plates, 2 through the bumper into the bottom side plates. Steel class 12.9, black. Nylon patch"
+Socket button head screw M3x0.5 x 6,ISO 7380-1,M3x6,12,"8 standoff ends, 2 bottom camera side plates (nylon patch), 2 Airtag/Antenna mount. Steel class 12.9, black"
+Hex socket head cap screw M3x0.50 x 22 x 18,ISO 4762,M3x22,4,"stack into the M3 inserts. Steel class 12.9, black. Nylon patch"
+m3 pressnut,,M3,7,"threaded insert, middle plate, fitted by the carbon supplier"
+m4 pressnut,,M4,4,"threaded insert, middle plate, fitted by the carbon supplier"
+Grommet M3,,M3,8,stack soft mount; size open
