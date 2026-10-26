@@ -32,17 +32,25 @@ and G (STEP, 2026-10-24): cross and bottom plate unchanged.
 
 | Change from rev2 | Detail |
 |---|---|
-| Top plate | holes added for future GPS mounts (one field of about 15 x 8 mm) |
+| Top plate | holes added for future GPS mounts (GPS cut-out 14.4 x 7.0 mm in the rev2.2 specification) |
 | Arm | motor centre bore Ø6.0 becomes Ø7.0 (founder) |
-| Middle plate | the one Ø4.6 M3 insert hole becomes Ø4.5 like the other six |
+| Middle plate | the one Ø4.6 M3 insert hole becomes Ø4.5 like the other six. Superseded by the nut holes of the handoff package rev2.2 (below) |
 | Camera side plates (Standoff-L/R) | M3 tap drill Ø2.6 becomes Ø2.5 (the spec value) |
-| Arm screws | ISO 7380-1 M4x12: the tip ends flush with the top of the 2.4 mm insert and 2.4 mm under the ESC. An M4x14 would end 0.37 mm under the ESC board |
+| Arm screws | ISO 7380-1 M4x12: bottom plate 3.0 + arm 6.0 + middle plate 3.0 = 12.0 mm, so the tip ends at the top face of the middle plate (flush with the M4-0 nut head), 2.4 mm under the ESC. An M4x14 would end 0.37 mm under the ESC board. Checked on 2026-10-24 against the provisional 2.4 mm insert; the result does not depend on the insert length, only on the stack |
 | Stack | ISO 4762 M3x20 with an ISO 10511 thin nylon lock nut on top (was a button head M3x22 into the inserts). Uncompressed, the M3x20 tip ends 0.9 mm below the top of the nut; the rubber grommets compress when the stack is tightened, so the length stays (founder) |
 | M3x6 for most screws | standoff ends, camera side plates and AirTag mount: 3.0 to 3.5 mm of thread (founder, after building a 5" rev1). The doubled M3x6 + M3x8 in 6 holes are gone |
 | Bumper | the two rear bottom side plate holes take an M3x6 without the bumper and an M3x8 with it; both are modelled and both ship |
 | Imported screws | the `Volumenkörper1` STEP bodies replaced by Onshape standard content |
 | Screw finish | every frame screw steel class 12.9, black. Nylon patch on the arm, centre, camera side plate and standoff screws; none on the stack screws or on screws with TPU under the head |
-| Parts | `18mmx4mm` renamed `Standoff M3 F-F 20 OD5` (bought, 7075); `softmount m2` renamed `Grommet M3`; Part Studio `Insert M3 (provisional)` added |
+| Parts | `18mmx4mm` renamed `Standoff M3 F-F 20 OD5` (bought, 7075); `softmount m2` renamed `Grommet M3`; Part Studio `Insert M3 (provisional)` added (the nuts are settled since, below) |
+
+Handoff package rev2.2 (sent to the suppliers 2026-10-25), settled after the checks above:
+
+| Item | Value |
+|---|---|
+| Middle plate nuts | self-clinching, 304 stainless, pressed in by the carbon supplier from the top face. 7 x M3-0: hole Ø4.22, seat Ø6.7 x 1.55, head flush, nut ends 0.69 mm above the plate underside. 4 x M4-0: hole Ø5.4, seat Ø8.1 x 1.55, head flush, nut ends 0.48 mm above the underside (M4 values to be confirmed with the supplier on the samples) |
+| Bolt holes Ø3 and Ø4 | +0.10/0 (Ø3.00 to 3.10, Ø4.00 to 4.10), as tight as possible for a standard bolt, never below the bolt diameter (was +0.03/0) |
+| Cross and arms | press fit, no visible play; production fit agreed on the samples |
 
 Open after rev2.2:
 
@@ -50,8 +58,9 @@ Open after rev2.2:
 |---|---|
 | Model | one `Bumper` instance has no source part. `Cam-Mount-R` was placed in the assembly after the version; its STEP is in `releases/rev2.2/` |
 | Counterbore for M3 button heads | Ø5.8 on the drawing, Ø6.0 proposed (an ISO 7380 M3 head is up to 5.7 mm) |
-| Drawing in Onshape | title block reads "OpenDrone Frame 3""; gives H8 holes; rev G gives +0.03/0 and the insert notes |
-| Insert | supplier insert type and part number open |
+| Drawing in Onshape | title block reads "OpenDrone Frame 3""; gives H8 holes and the old cross/arm tolerance; the rev2.2 specification gives +0.10/0 and the press fit |
+| Insert | settled: M3-0 and M4-0 self-clinching nuts, 304 stainless. The M4-0 values (hole Ø5.4, seat Ø8.1 x 1.55, head Ø7.87 x 1.5, shank 0.97) are still to be confirmed with the supplier. The Onshape Part Studio `Insert M3 (provisional)` is not yet replaced by the nuts |
+| Anti-slip pad | the released pad export (`releases/rev2.2/step/anti-slip-pad.step`) predates the current pad, rev B (founder decision 2026-10-26): one pad for both frames, 15.5 x 93.1 x 2.0 mm, black silicone 50 Shore A, logo debossed 0.5 mm, 3M adhesive back, compression moulded. The export is 15.5 x 93.1 x 1.5 mm (rev A, Onshape part `RLED`); the 3" will use the same pad. |
 | Grommet M3 | size and hardness open |
 
 ## rev2
