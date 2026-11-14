@@ -70,7 +70,7 @@ flowchart TB
   SET["OpenFrame-5F set"] --> CF["CNC carbon"]
   SET --> AL["CNC aluminium side plates"]
   SET --> TPU["TPU parts, preliminary"]
-  SET --> KIT["Hardware kit"]
+  SET --> KIT["Hardware bag"]
   SET --> PAD["Anti-slip pad"]
 ```
 
@@ -121,15 +121,15 @@ Self-clinching nuts (304 stainless, 7 x M3-0 + 4 x M4-0) are pressed into the
 middle plate by the carbon supplier, flush with the top face. The M4-0 values
 are still to be confirmed with the supplier.
 
-## Hardware kit
+## Hardware bag
 
-<img src="images/kit.png" width="860" alt="OpenFrame-5F kit laid out, render: letters are frame and printed parts, numbers the hardware kit" />
+<img src="images/kit.png" width="860" alt="OpenFrame-5F hardware laid out, render: letters are frame and printed parts, numbers the hardware bag" />
 
 One bag per frame: every screw and nut kind of the frame plus 2 spares
 (41 screws in 6 kinds). Every screw is black-oxide alloy steel, class 12.9.
 The bumper holes get an M3x6 without the bumper and an M3x8 with it; both ship.
 
-| IPN | Item | Nylon patch | In the frame | In the kit | Where |
+| IPN | Item | Nylon patch | In the frame | In the bag | Where |
 |---|---|---|---|---|---|
 | `FAS-M4X12-BH-NP` | ISO 7380-1 M4x12 | yes | 4 | 6 | arms |
 | `FAS-M3X12-BH-NP` | ISO 7380-1 M3x12 | yes | 1 | 3 | centre through the cross |
